@@ -1,0 +1,299 @@
+/*multi-line comment*/
+
+/*this chnages the stle of textt*/
+p{ line-height: 1em; }
+h1, h2, h3, h4{
+    color: black;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+h1{ font-size: 1.7em; }
+h2{ font-size: 1.5em; }
+a{
+	color: black;
+	text-decoration: none;
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+/* This is ued to structure the code's white space so that it is readable */
+
+body{
+    font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
+}
+/* This adds a page margin space */
+#page{ margin: 20px; }
+
+/* This is The logo style */
+#logo{
+	width: 35%;
+	margin-top: 5px;
+	font-family: georgia;
+	display: inline-block;
+}
+/* This is the Nav style. This is made within an inline-block as i have been practising it, plus it honestly looks better than a bulletpoint */
+#nav{
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+	#nav ul{}
+		#nav ul li{
+			display: inline-block;
+			height: 62px;
+		}
+			#nav ul li a{
+				padding: 20px;
+				background: black;
+				color: white;
+			}
+			#nav ul li a:hover{
+				background-color: ##000000;
+				box-shadow: 0px 1px 1px #666;
+			}
+			#nav ul li a:active{ background-color: ##000000; }
+			
+/* This is for the content to style it */
+  
+#content{
+	margin: 30px 0;
+	background: white;
+	padding: 20px;
+	clear: both;
+}
+/*This is another version of content with a diffrent name to some duplication confliction errors*/
+#content2{
+	margin: 30px 0;
+	background: white;
+	padding: 20px;
+	clear: both;
+}
+/*This allows us the style html without tables*/
+.container {
+    width: 100%;
+    height: 894px;
+    margin: auto;
+    padding: 10px;
+}
+/*this styles the left side of the container*/
+.one {
+    width: 13.3%;
+    height: 894px;
+    background: #C0C0C0;
+    float: left;
+}
+/*this styles a margin gap between the left and center side of the container*/
+.two {
+    margin-left: 15%;
+    height: 894px;
+    background: #C0C0C0;
+}
+/*this styles the article*/
+#article {
+    margin-left: 30px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+/*This modifes the container position*/
+.container {
+  position: relative;
+  width: 100%;
+}
+/*This modifes images*/
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*This generates an overlay (not being used)*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+/*This allows mouse hover on overlay (not being used)*/
+.container:hover .overlay {
+  height: 100%;
+}
+/*This alters text for overlay*/
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #4EB9DB; /* blue */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+/* This styles the footer */
+#footer{
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+}
+	#footer p{
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: grey;
+		float: center
+	}
+
+#left { position: absolute; left: 0; top: 0; width: 50%; 
+}
+
+#right { position: absolute; right: 0; top: 0; width: 50%; 
+}
+/* This is to wrap the text in the content section*/	
+p.test {
+    width: 140em;  
+    border: 1px solid #FFFFFF;
+    word-wrap: break-word;
+	text-align: left;
+	wrap-align: center
+	}	
+/* This is the form style for the contact us segemnt.*/
+/* all of the styles allow for mulitpile inputs types and the use of java to generate the animations and effects*/				
+<style type="text/css">
+.form-style-1 {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/* form style*/	
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+/* form style*/	
+.form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+/* form style*/	
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+/* form style*/	
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+	/* form style*/	
+}
+.form-style-1 .field-divided{
+    width: 49%;
+}
+/* form style*/	
+.form-style-1 .field-long{
+    width: 100%;
+}
+/* form styl width select */	
+.form-style-1 .field-select{
+    width: 100%;
+}
+/* form style height */	
+.form-style-1 .field-textarea{
+    height: 100px;
+}
+/* from style for the submit buttons */	
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #c61717;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+/* input for submit*/		
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #dd6c6c;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+/* form style*/	
+.form-style-1 .required{
+    color:red;
+}
+
+/* ul id{
+	display: inline;
+	test-decoraction: none;
+	padding: 5px;
+	list-style: none;
+	text-align: center;	
+}*//* I used the button version of this as it looks better*/
+
+</style>
+ 
+/* multiple styles seperated by a , */
+#content,
+ul li a{ box-shadow: 0px 1px 1px #999; }

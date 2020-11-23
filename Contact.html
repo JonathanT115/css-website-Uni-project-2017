@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Main body of content for Website -->
+
+     <title>Solent Pizzas</title>
+	
+	 <meta name="Student ID" content="Q12912182" />
+	 <meta name="description" content="CSS TCA" />
+
+<!-- Link to stylesheet (css) -->	
+	 <link rel="stylesheet" href="style.css" type="text/css" />
+	 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+     <link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+</head>
+
+<body>
+<!-- webpage content -->
+	<div id="page">
+		<div id="logo">
+			<img src="Logo.png" alt="SolentPizza" />
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="Index.html">Home Page</a></li>
+				<li><a href="Order.html">Order Now</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			</ul>
+		</div>	
+		</div>
+<!-- this buts the report in a content section -->	
+		<div id="content">
+<!-- this is the form(contant) section of the page-->
+<!-- the form is cunstructed in the style.css -->
+		<h2>Contact Us</h2>
+        <form>
+        <ul class="form-style-1"> <!-- this connects to the style.css for the from -->
+         <li>
+	         <label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" />
+	     </li>
+	<!-- this is the input section for full name and last name.-->
+         <li>
+             <label>Email <span class="required">*</span></label>
+             <input type="email" name="field3" class="field-long" />
+         </li>
+	<!-- this is the input for the email validation -->
+         <li>
+             <label>Your Message <span class="required">*</span></label>
+             <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+         </li>
+	<!-- input section for message -->
+         <li>
+             <input type="submit" value="Submit" />
+         </li>
+	<!-- input for submit-->
+        </ul>
+        </form>
+        </div>
+		
+     <div id="content2">
+	 <h2>Find us here</h2>
+     <!-- iframe used to embed map -->	
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5031.444914805848!2d-1.3981349634765394!3d50.910351379771086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b3d2a7c433db059!2sSouthampton+Solent+University!5e0!3m2!1sen!2suk!4v1494504362637" 
+             width="1820" height="400" style="border:0" allowfullscreen>
+     </iframe>
+     </div>
+	
+<!-- this adds a footer to the page-->		
+		<div id="footer">
+			<p>Student ID <a href="/" target="_blank">[Q12912182]</a></p>
+		<script src="date.js" type="text/javascript"></script>
+        <div id="clockbox">
+        </div>
+		</div>		
+</body>
+</html>

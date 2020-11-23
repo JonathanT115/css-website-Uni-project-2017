@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Main body of content for Website -->
+     <title>Solent Pizzas</title>
+	
+	 <meta name="Student ID" content="Q12912182" />
+	 <meta name="description" content="CSS TCA" />
+
+<!-- Link to stylesheet (css) -->	
+	 <link rel="stylesheet" href="style.css" type="text/css" />
+	 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+     <link rel="icon" href="favicon.ico" type="image/x-icon">	
+</head>
+
+<body>     
+<!-- webpage content -->
+	 <div id="page">
+		 <div id="logo">
+			<img src="Logo.png" alt="SolentPizza" />
+		 </div>
+		 <div id="nav">
+			 <ul>
+				<li><a href="Index.html">Home Page</a></li>
+				<li><a href="Order.html">Order Now</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			 </ul>	
+		</div>
+     </div>		
+		
+<!-- this puts the data or code lines in a content section instead of the body of the html -->	
+     <div id="content">
+     <section class="container">
+<!-- this container allows the use of styling the html wihtout the use of tables -->	
+         <div class="one">
+<!-- This connect to class from the css -->			 
+	         <img style="float: bottom; margin: 0px 0px 15px 15px;" src="veg.jpeg" width="200" height="200" alt="VegPizza" onmouseover="this.src='veg (1).jpg'" onmouseout="this.src='veg.jpeg'"/>
+             <img style="float: bottom; margin: 0px 0px 15px 15px;" src="Meat.jpg" width="200" height="200" alt="MeatPizza" onmouseover="this.src='Meat (1).jpg'" onmouseout="this.src='Meat.jpg'"/>
+             <img style="float: bottom; margin: 0px 0px 15px 15px;" src="chee.jpg" width="200" height="200" alt="CheesePizza" onmouseover="this.src='chee (1).jpg'" onmouseout="this.src='chee.jpg'"/>
+             <img style="float: bottom; margin: 0px 0px 15px 15px;" src="veg.jpeg" width="200" height="200" alt="VegPizza" onmouseover="this.src='Meat.jpg'" onmouseout="this.src='veg.jpeg'"/>
+<!-- rollover images -->	
+	     </div>
+	
+         <div class="two">
+<!-- This connect to class two from the css -->			 
+	         <a href="Order.html"><img style="float: center; margin: 0px 0px 15px 15px;" src="Welcome.png" alt="Welcome" onmouseover="this.src='OrderNow.png'" onmouseout="this.src='Welcome.png'" /></a>
+<!-- This allows a rollover to have a hyper link -->		
+		     <img style="float: center; margin: 0px 0px 15px 15px;" src="best.png" alt="TestLine"/>
+			 <img style="float: center; margin: 0px 0px 15px 15px;" src="best2.png" alt="TestLine2"/>
+			 <img style="float: center; margin: 0px 0px 15px 15px;" src="best3.png" alt="TestLine3"/>
+			 
+		 </div>
+		 
+
+     </section>
+     </div>
+	 
+<!-- this adds a footer to the page-->		
+	 <div id="footer">
+<!-- this Javascript code is used to put a text clock on the page. This will display the current time and date --> 
+		<p>Student ID <a href="/" target="_blank">[Q12912182]</a></p>
+		<script src="date.js" type="text/javascript"></script>
+     <div id="clockbox">
+     </div>
+	 </div>
+		
+</body>
+</html>

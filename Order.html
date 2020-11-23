@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Main body of content for Website -->
+
+     <title>Solent Pizzas</title>
+	
+	 <meta name="Student ID" content="Q12912182" />
+	 <meta name="description" content="CSS TCA" />
+
+<!-- Link to stylesheet (css) -->	
+	 <link rel="stylesheet" href="style.css" type="text/css" />
+	 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+     <link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+<!-- this script allows the use of java to code programs and run them in html -->	
+<script type="text/javascript">
+function runTotal() {
+    var total = 0;
+    var small = 5.0;
+    var medium = 8.0;
+    var large = 11.0;
+    var addTop = 0.25;
+    if(document.forms[0].pizza[0].checked == true) {
+        total += small;
+    }
+    else if(document.forms[0].pizza[1].checked == true){
+        total += medium;
+    }
+    else if(document.forms[0].pizza[2].checked == true){
+        total += large;
+    }
+    for(var i = 0; i < 4; i++){
+        if(document.forms[0].toppings[i].checked == true){
+            total += addTop;
+		}
+    }
+    document.f1.Total.value = total;
+} 
+</script>
+
+<script>
+function validateForm() {
+    var x = document.forms["f1"]["pizza"].value;
+    if (x == "") {
+        alert("Select one pizza base");
+        return false;
+    }
+}
+</script>
+	
+</head>
+<body>
+<!-- webpage content -->
+     <div id="page">
+		<div id="logo">
+			<img src="Logo.png" alt="SolentPizza" />
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="Index.html">Home Page</a></li> <!-- links to home page -->	
+				<li><a href="Order.html">Order Now</a></li> <!-- links to order page -->	
+				<li><a href="Contact.html">Contact Us</a></li> <!-- links to contact page -->	
+			</ul>	
+		</div>
+	 </div>
+<!-- this allows css to design the content section insted of using out dated code lines in the html -->	
+
+<!-- this is the contant section of the page-->
+<!-- this genrates an alert box -->
+<div id="content">
+
+ <div class="alert">
+     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+     You must have at least have one pizza base selected.
+ </div>
+ 
+<form action="Order.html" class="tab" method="post" name="f1" onsubmit="return validateForm()"> 
+<p>What type of pizza would you like?</p>
+<input type="radio" name="pizza" value="vegetarian" onclick="runTotal();" />Small £5<br />
+<input type="radio" name="pizza" value="MeatLovers" onclick="runTotal();" />Medium £8<br />
+<input type="radio" name="pizza" value="cheese" onclick="runTotal();" />Large £11<br />
+
+<p>Would you like extra toppings? select them here:</p>
+<input type="checkbox" name="toppings" value="peperoni" onclick="runTotal();" />Peperoni £.25<br/> 
+<input type="checkbox" name="toppings" value="extraCheese" onclick="runTotal();" />Extra Cheese £.25<br/> 
+<input type="checkbox" name="toppings" value="mushrooms" onclick="runTotal();" />Mushrooms £.25<br /> 
+<input type="checkbox" name="toppings" value="anchovies" onclick="runTotal();" />Anchovies £.25<br/> 
+
+<p>Delivery Information</p>
+<input type="text" name=Address value="Enter Your Address"><br />
+<input type="text" name=Address value="Enter Your Post Code"><br />
+
+<p>Total</p>
+<p><input type="text" name=Total value="0"><br /> </p>
+<input type="submit" value="submit" /> <input type ="reset">
+</form>
+</div>
+		
+<!-- this adds a footer to the page-->		
+		<div id="footer">
+			<p>Student ID <a href="/" target="_blank">[Q12912182]</a></p>
+		<script src="date.js" type="text/javascript"></script>
+         <div id="clockbox">
+         </div>
+         </div>		 
+</body>
+</html>
